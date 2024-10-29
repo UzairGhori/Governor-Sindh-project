@@ -1,16 +1,6 @@
-import React, { FormEvent } from 'react'
+import React from 'react'
 
 const Result = () => {
-{
-   
-    function handleSubmit(event: FormEvent<HTMLFormElement>): void {
-        event.preventDefault(); // Add this line to prevent form submission
-        // TODO: validate and process form data here
-        console.log('Form submitted successfully');
-    }
-}
-
-
     return (
     
     <div className='bg-white w-auto h-auto justify-center items-center'>
@@ -58,7 +48,7 @@ const Result = () => {
             <div className="flex justify-center">  
                 <button  
                     type="submit"  
-                    className="mt-5 w-full bg-main py-3 text-center bg-blue-800 rounded-md text-sm font-semibold tracking-widest text-white transition-all hover:translate-y-1 disabled:opacity-60 disabled:hover:cursor-not-allowed sm:w-52 sm:py-4 sm:text-base  onSubmit={handleSubmit}"  
+                    className="mt-5 w-full bg-main py-3 text-center bg-blue-800 rounded-md text-sm font-semibold tracking-widest text-white transition-all hover:translate-y-1 disabled:opacity-60 disabled:hover:cursor-not-allowed sm:w-52 sm:py-4 sm:text-base"  
                     style={{ fontFamily: '__Poppins_092cb9, __Poppins_Fallback_092cb9', fontStyle: 'normal' }}  
                    
 
